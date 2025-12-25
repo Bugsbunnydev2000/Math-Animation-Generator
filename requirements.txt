@@ -4,5 +4,5 @@ manim==0.18.1
 python-dotenv==1.0.1
 watchdog==4.0.0
 Pillow==10.4.0
-ollama-python==0.1.7
 openai==1.40.0
+
