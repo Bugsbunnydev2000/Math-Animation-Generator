@@ -886,10 +886,29 @@ def render_ui():
     
     st.divider()
     
-    if st.button("🚀 Generate Animation", type="primary", use_container_width=True):
-        if not user_request.strip():
-            st.error("❌ Please describe your animation first!")
-            st.stop()
+   if st.button("🚀 Generate Animation"):
+    if not user_request.strip():
+        st.error("❌ Please describe your animation first!")
+        st.stop()
+    
+    with st.spinner("🎨 Crafting your cinematic vision..."):
+        enhanced_prompt = generate_enhanced_prompt(user_request, model_name)
+        st.session_state.enhanced_prompt = enhanced_prompt
+    
+    # Lazy import here
+    from manim import *
+
+    with st.spinner("⚡ Generating Manim code..."):
+        generated_code = generate_manim_code(enhanced_prompt, model_name)
+        st.session_state.generated_code = generated_code
+
+    with st.spinner("🎬 Rendering your animation..."):
+        success, video_path, error_msg = render_manim_animation(
+            generated_code,
+            quality_preset,
+            custom_res if use_custom else None,
+            custom_fps if use_custom else None
+        )
         
         with st.spinner("🎨 Crafting your cinematic vision..."):
             enhanced_prompt = generate_enhanced_prompt(user_request, model_name)
@@ -1021,4 +1040,5 @@ def render_ui():
 if __name__ == "__main__":
     TEMP_DIR.mkdir(exist_ok=True)
     cleanup_old_files()
+
     render_ui()
