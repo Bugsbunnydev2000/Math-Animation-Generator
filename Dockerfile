@@ -1,3 +1,4 @@
+# Base image
 FROM python:3.10-slim
 
 # Install system dependencies for Manim
@@ -8,25 +9,29 @@ RUN apt-get update && apt-get install -y \
     texlive \
     texlive-latex-extra \
     build-essential \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
+# Set working directory
 WORKDIR /app
 
-# Copy requirements first for better caching
+# Copy requirements first for caching
 COPY requirements.txt .
+
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy ALL files from your project
+# Copy project files
 COPY . .
 
-# Create temp directory
+# Create temp directory for animations
 RUN mkdir -p temp_animations
 
-# Expose Streamlit port
+# Expose port (dynamic via env)
 EXPOSE 8501
 
-# Health check
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+# Health check (optional)
+HEALTHCHECK CMD curl --fail http://localhost:${PORT:-8501}/_stcore/health || exit 1
 
-# Run Streamlit - adjust the filename if your main file is named differently
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
+# Run Streamlit using environment PORT (Railway sets $PORT automatically)
+CMD ["sh", "-c", "streamlit run app.py --server.port=${PORT:-8501} --server.address=0.0.0.0 --server.enableCORS=false --server.enableXsrfProtection=false"]
