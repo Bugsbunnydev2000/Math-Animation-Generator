@@ -13,4 +13,5 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
-CMD ["streamlit", "run", "app-3.py", "--server.port=8080", "--server.address=0.0.0.0"]
+EXPOSE 7860
+CMD ["streamlit", "run", "app-3.py", "--server.port=7860", "--server.address=0.0.0.0"]
