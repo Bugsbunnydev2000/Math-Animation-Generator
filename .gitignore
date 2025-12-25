@@ -1,0 +1,7 @@
+temp_animations/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+*.mp4
+*.log
