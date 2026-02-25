@@ -54,7 +54,7 @@ Video preview + download appears in the browser
 
 1. **Install Python 3.12.6**  
    https://www.python.org/downloads/release/python-3126/  
-   → Check **"Add Python to PATH"** during installation
+  
 
 2. **Install FFmpeg**  
    https://ffmpeg.org/download.html  
@@ -70,13 +70,13 @@ Video preview + download appears in the browser
 
    ```bash
    ollama serve
-   ```bash
+
 
 In a second terminal window:
 
 
 ```bash
 ollama pull qwen2.5-coder:7b
-```bash
+
 
 
