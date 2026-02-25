@@ -1,3 +1,5 @@
+
+
 #  Math to Manim – Professional Edition
 
 **Transform natural language math & science descriptions into cinematic Manim animations — 100% local, offline, private.**
@@ -111,4 +113,8 @@ https://github.com/user-attachments/assets/962d6e62-e0bd-4986-a3be-2d79f3123613
 https://github.com/user-attachments/assets/3aa0bb32-610e-4796-af96-0b6c70fef764
 
 
+
+
+
+**For some mathematical examples, this project may give an error and not run correctly. We will try to optimize it soon so that it does not give an error.**
 
