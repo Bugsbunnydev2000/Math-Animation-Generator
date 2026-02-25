@@ -71,8 +71,7 @@ Video preview + download appears in the browser
    Open a terminal / PowerShell:
 
 ```bash
-ollama pull qwen2.5-coder:7b
-
+ollama serve
 ```
 
 In a second terminal window:
