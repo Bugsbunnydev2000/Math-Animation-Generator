@@ -95,3 +95,20 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+
+If you want to see a video of the examples that were created: go to example-result Directory 
+
+
+# example Use MVP :
+
+
+https://github.com/user-attachments/assets/962d6e62-e0bd-4986-a3be-2d79f3123613
+
+# Example animation Create : 
+
+
+https://github.com/user-attachments/assets/3aa0bb32-610e-4796-af96-0b6c70fef764
+
+
+
