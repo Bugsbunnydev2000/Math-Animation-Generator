@@ -1,0 +1,14 @@
+# Core dependencies
+streamlit==1.31.0
+ollama==0.1.8
+manim==0.18.1
+
+# Supporting libraries
+numpy==1.24.3
+pillow==10.1.0
+scipy==1.11.4
+sympy==1.12
+
+# Additional utilities
+watchdog==3.0.0
+click==8.1.7
