@@ -68,9 +68,10 @@ Video preview + download appears in the browser
    https://ollama.com/download  
    Open a terminal / PowerShell:
 
-   ```bash
-   ollama serve
+```bash
+ollama pull qwen2.5-coder:7b
 
+```
 
 In a second terminal window:
 
@@ -78,5 +79,19 @@ In a second terminal window:
 ```bash
 ollama pull qwen2.5-coder:7b
 
+```
 
+# Install dependencies : 
 
+```bash
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+```
+
+# Launch the application :
+
+```bash
+streamlit run app.py
+```
