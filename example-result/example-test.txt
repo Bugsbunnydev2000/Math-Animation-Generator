@@ -1,0 +1,63 @@
+Functions : y = A * sin(ωx)
+
+Geometric Transformations : Rotation matrix: [[cosθ, -sinθ], [sinθ, cosθ]] applied to vector (1,0) 
+
+Differential Equations : d²x/dt² + ω²x = 0
+
+Geometry : r = a * e^(bθ) 
+
+Statistics and Probability : Normal distribution N(0,1), sample 1000 points
+
+Algebraic Equations : x² - 5x + 6 = 0
+
+
+Functions : Fourier series of square wave: sum_{n=1,3,5,...} (4/(n π)) sin(n π x)
+
+
+Rotation by 45 degrees: [[cos(45°), -sin(45°)], [sin(45°), cos(45°)]] applied to vector (1,0)
+Show original and rotated vector with labels
+
+
+
+Homotopy between circle and trefoil knot
+
+Glowing white knot slowly untying itself into a circle, soft ambient light, dramatic 3D rotation
+
+
+Euler’s formula e^{iπ} + 1 = 0 visualized
+
+Complex plane, unit circle, spiral approach to -1, all numbers appearing one by one in gold
+
+
+
+
+sum of x^n+...+1
+
+
+
+solve (a+b)^2 and show animation Step by Step
+
+
+Animate Fibonacci sequence as growing golden rectangles
+
+Show Pythagorean theorem proof animation
+
+Solve x^2 - 5x + 6 = 0 step by step
+
+Plot sin(x) graph from -2pi to 2pi
+
+Differentiate x^3 and show steps
+
+Solve system of equations 2x+3y=6 and x-y=1
+
+Multiply two 2x2 matrices step by step
+
+Show limit of sin(x)/x as x approaches 0
+
+Simplify a^3 + b^3 + c^3 - 3abc step by step
+
+show graph x = 5, y = 2
+
+
+
+
